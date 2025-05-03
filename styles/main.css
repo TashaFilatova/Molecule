@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Header */
+.header {
+  position: relative;
+  border-bottom: 1px solid #d0d0d0;
+}
+.logo {
+  margin: 0 10px;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px 10px;
+  font-size: 1.2em;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  /* padding: 10px 20px; */
+  /* transition: background 0.5s; */
+}
+.menu a:hover {
+  background-color: #555;
+}
+.pink-bar {
+  background-color: #feebf0;
+  position: absolute;
+  width: 57px;
+  height: 100%;
+  top: 0;
+  right: 58px;
+  z-index: -1;
+}
+.doughnut {
+  background: transparent center 28px / contain url(../images/doughnut.png) no-repeat;
+  position: absolute;
+  width: 57px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Main */
+.offer h1 {
+  font-weight: 600;
+  margin: 0.2em 0;
+}
+
+.price {
+  font-size: 2em;
+  margin: 0.5em 0
+}
+
+.price-value {
+  font-weight: 500;
+  color: #d37e56;
+}
+
+.price-volume {
+  font-size: 0.6em;
+  color: #bdbdbd;
+  text-wrap: nowrap;
+}
+
+
+.offer {
+  margin: 3em 2em;
+  padding: 0 1em;
+}
+.offer-header {
+  position: relative;
+}
+.offer-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -3em;
+  width: 1em;
+  background-color: #eaebe6;
+  height: 100%;
+} 
+.offer-image {
+  float: right;
+  margin-top: 10px;
+  margin-right: -22px;
+  
+}
+.offer-image img{
+  width: 75px;
+  height: auto;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    align-items: flex-end;
+    gap: 25px;
+  }
+  .logo img {
+    height: 70px;
+    width: auto;
+  }
+  .menu {
+    padding: 0;
+    /* font-size: 1.2em; */
+    gap: 80px;
+  }
+
+  .pink-bar { 
+    width: 27px;
+    right: 80px;
+  }
+  .doughnut {
+    background-position: center center;
+    width: 80px;
+    background-size: cover;
+  }
+
+
+  .offer-image img {
+    width: 275px;
+
+  }
+  .offer-image {
+    float: right;
+    margin-top: -20px;
+    margin-right: 60px;
+  } 
+
+  .offer h1 {
+    font-weight: 600;
+    font-size: 2.3em;
+    margin: 1em 0;
+  }
+  
+  .price {
+    font-size: 3em;
+  }
+  .offer-header::before {
+    width: 2.5em;
+    left: -4em;
+  }
+  .offer {
+    margin: 3em 3.2em;
+  }
+
+  /* … */
+}
